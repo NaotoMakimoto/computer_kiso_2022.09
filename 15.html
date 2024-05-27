@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+</head>
+<body>
+	<h1>第15回　Euclidの互除法　2023年01月19日</h1>
+
+	<h2>最大公約数1</h2>
+	<form name="form1">
+		<input type="text" size="5" name="ip1">
+		と
+		<input type="text" size="5" name="ip2">
+		との最大公約数は
+		<input type="text" size="5" name="op">
+		です。
+		<input type="button" value="計算" onclick="func1();">
+		<input type="reset">
+	</form>
+	<script>
+		function gcd1(x,y){
+			var gcd1 = 1;
+			var d;
+			for (d=2;d<=x&&d<=y;d++){
+				if(x%d===0&&y%d===0) gcd1=d;
+			}
+			return gcd1;
+		}
+		document.write(gcd1(12,18));
+		function func1(){
+			var n1=eval(document.form1.ip1.value);
+			var n2=eval(document.form1.ip2.value);
+			document.form1.op.value=gcd1(n1,n2);	
+		}
+	</script>
+	
+		
+	<h2>最大公約数2</h2>
+	<form name="form2">
+		<input type="text" size="5" name="ip1">
+		と
+		<input type="text" size="5" name="ip2">
+		との最大公約数は
+		<input type="text" size="5" name="op">
+		です。
+		<input type="button" value="計算" onclick="">
+		<input type="reset">
+	</form>
+	<script>
+		function gcd2(x,y){
+			var gcd2 =1;
+			var d;
+			
+		}
+	</script>
+
+	<h2>最大公約数3</h2>
+	<form name="form3">
+		<input type="text" size="5" name="ip1">
+		と
+		<input type="text" size="5" name="ip2">
+		との最大公約数は
+		<input type="text" size="5" name="op">
+		です。
+		<input type="button" value="計算" onclick="">
+		<input type="reset">
+	</form>
+	<script>
+		function euc(x,y){
+			var r;
+			while (y>0){
+				r=x%y;
+				x=y;
+				y=r;
+			}
+			return x;
+		}
+		document.write(euc(12222,18));
+	</script>
+
+
+</body>
+</html>

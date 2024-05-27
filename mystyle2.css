@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#home{
+    background-image: url(images1/one.jpg);
+    background-blend-mode: luminosity;
+}
+
+.big-bg{
+    background-size: cover;
+    background-position: center ;
+    min-height: 100vw;
+}
+
+ul li {
+	padding: 1px;
+}
+
+a {
+	text-align: right;
+	margin-right: 10%;
+}

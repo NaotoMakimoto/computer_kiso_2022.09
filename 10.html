@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+<style>
+input[type="button"]{
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<h1>第10回　『分岐処理』　2022年11月24日</h1>
+
+	<h2>宿題</h2>
+		<form name="form1">
+			あなたの今日の運勢は
+			<input type="text" size="3" name="op1">
+			です
+			<input type="button" value="占う"  onclick="fort();">
+		</form>
+		<script>
+			function fort() {
+				var x = Math.random();
+				if (x >= 0.9) document.form1.op1.value = "大吉";
+				else if (x >= 0.7) document.form1.op1.value = "中吉";
+				else if (x >= 0.3) document.form1.op1.value = "小吉";
+				else if (x >= 0.1) document.form1.op1.value = "凶";
+				else document.form1.op1.value = "大凶";
+			}
+		</script>
+		<br>
+		<script>
+			var x = Math.random();
+			if (x >= 0.7) document.write('<img src="omoroi.gif">');
+			else if (x >= 0.4) document.write('<img src="omoroi2.gif">');
+			else if (x >= 0.2) document.write('<img src="omoroi3.webp">');
+			else document.write('<img src="omoroi4.webp">');
+		</script>
+		
+
+
+	<h2>ifの練習</h2>
+		<script>
+			var n = 3;
+			if (n%2===0) {
+				document.write(n +"は偶数です。");
+				document.write("すごいね！");
+			}
+		</script>
+
+	<h2>if else の練習</h2>
+		<script>
+			if (n%2===0) {
+				document.write(n + "は偶数です。");
+				document.write("すごいね！");
+			} else {
+				document.write(n + "は奇数です。");
+				document.write("しょぼいね");
+			}
+		</script>
+
+	<h2>if else if の練習</h2>
+		<script>
+			if (n%3===0) document.write(n + "は3の倍数です。");
+			else if (n%3===1) document.write(n + "は3で割ると1余ります。");
+			else document.write(n + "は3で割ると2余ります。");
+		</script>
+
+	<h2>乱数の実験</h2>
+		<script>
+			document.write(Math.random());
+			//Math.random()で0～1の間の乱数を生成する
+		</script>
+
+</body>
+</html>

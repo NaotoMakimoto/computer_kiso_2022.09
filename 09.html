@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+	<script>
+		function br(){
+			document.write("<br>");
+		}
+	</script>
+</head>
+<body>
+
+	<h1>第09回　『JavaScriptの基本3（演算子）』　2022年11月17日</h1>
+
+	<h2>宿題1</h2>	
+		<form name="formA">
+			<input type="text" size="3" name="ip1">
+			<input type="button" value="⇄" onclick="change();">
+			<input type="text" size="3" name="ip2">
+		</form>
+		<script>
+			function change(){
+				var x = document.formA.ip1.value;
+				var y = document.formA.ip2.value;
+				document.formA.ip1.value = y;
+				document.formA.ip2.value = x;
+		}
+		</script>
+
+	<h2>宿題2</h2>
+		<form name="formB">
+			<input type="text" size="3" name="ip1">
+			を
+			<input type="text" size="3" name="ip2">
+			で割ると　
+			商は
+			<input type="text" size="3" name="op1">
+			で余りは
+			<input type="text" size="3" name="op2">です
+			<input type="button" value="計算" onclick="dvd()">
+		</form>
+		<script>
+			function dvd(){
+				var x = eval(document.formB.ip1.value);
+				var y = eval(document.formB.ip2.value);
+				document.formB.op1.value = (x-x%y)/y;
+				document.formB.op2.value = x%y;
+			}
+		</script>
+
+	<h2>宿題3</h2>
+		<form name="formC">
+			<input type="text" size="3" name="ip1">
+			が
+			<input type="text" size="3" name="ip2">
+			で割り切れるというのは
+			<input type="text" size="3" name="op1">
+			です
+			<input type="button" value="計算" onclick="dvd2()">
+		</form>
+		<script>
+			function dvd2(){
+				var x = eval(document.formC.ip1.value);
+				var y = eval(document.formC.ip2.value);
+				document.formC.op1.value = x%y ===0;
+			}
+		</script>
+			
+
+
+	<h2>formの練習（先週の続き）</h2>
+		
+		<form name="form1">
+			<input type="text" size="3" name="ip1">
+			+
+			<input type="text" size="3" name="ip2">
+			=
+			<input type="text" size="5" name="op">
+			<input type="button" value="計算" onclick="calc();">
+		</form>
+		<script>
+			function calc(){
+				var x = eval(document.form1.ip1.value);
+				var y = eval(document.form1.ip2.value);
+				document.form1.op.value = x+y;
+			}	
+		</script>
+
+	<h2>計算の演算子の練習</h2>
+		<script>
+			document.write(3+2);br();
+			document.write(42-55);br();
+			document.write(5*8);br();
+			document.write(4/2);br();
+			document.write(3/2);br();
+			document.write(2/3);br();
+			document.write(77%6);br();
+			
+		</script>
+
+	<h2>代入演算子の練習</h2>
+		<script>
+			var a;
+			a=1;
+			document.write(a);br();
+			a=a+2;
+			document.write(a);br();
+		</script>
+
+	<h2>比較演算子の練習</h2>
+		<script>
+			document.write(3=="3");br();
+			document.write(3!="3");br();
+			document.write(3==="3");br();
+			document.write(3!=="3");br();
+		</script>
+	<h2>論理演算子の練習</h2>
+		<script>
+			document.write((3>2)&&(3<5));br();
+			document.write((3<1)||(2===2));br();
+			document.write(!(3<1));br();
+		</script>
+
+
+</body>
+</html>

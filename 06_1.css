@@ -1,0 +1,6 @@
+h1 { border-bottom:solid; width: 50%}
+img[src$="p007.jpg"]{float:right; margin-left: 10px;}
+.yoko{color="white"}
+.blue {color:#0000FF;}
+h2.blue {background-color:blueviolet;}
+.xxx{color:#fff;}

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+</head>
+<body>
+	<h1>第14回　日付・配列（ Euclid の互除法 ）2022年01月12日</h1>
+
+	<h2>宿題</h2>
+	<script>
+		Today = new Date();
+		var year = Today.getFullYear();
+		var month = Today.getMonth();
+		var date = Today.getDate();
+		var day = Today.getDay();
+		var youbi = new Array("日","月","火","水","木","金","土");
+		var hours = Today.getHours();
+		var minutes = Today.getMinutes();
+		var seconds = Today.getSeconds();
+
+		document.write("今の時刻は"+year+"年"+(month+1)+"月"+date+"日"+"（"+youbi[day]+"曜日）"
+				+hours+"時"+minutes+"分"+seconds+"秒です");
+		
+	</script>
+
+	<br><br>
+
+	<script>//英語
+		var Month = new Array("January","February","March","April","May",
+					"June","July","August","September","October","November","December");
+
+		var Date = new Array("st","nd","rd","th","th","th","th","th","th","th"
+					,"th","th","th","th","th","th","th","th","th","th"
+					,"st","nd","rd","th","th","th","th","th","th","th","st"); 
+
+		document.write(Month[month]+" "+date+Date[date]);
+
+
+		　　// ifを使ってもできた　　
+		var x;
+		var y = eval(date);
+
+		if (y===1) x="st";
+		else if (y===21) x="st";
+		else if (y===31) x="st";
+		else if (y===2) x="nd";
+		else if (y===22) x="nd";
+		else if (y===3) x="rd";
+		else if (y===23) x="rd";
+		else x="th";
+
+		//document.write(date+x);
+
+	</script>
+	
+	
+
+	<h2>日付オブジェクトの練習</h2>
+	<script>
+		Today = new Date();
+		document.write("今年は"+Today.getFullYear()+"年です。");
+		var h = Today.getHours();
+		var m = Today.getMinutes();
+		var s = Today.getSeconds();
+
+		document.write("今の時刻は"+h+"時"+m+"分"+s+"秒です。");
+
+		var month = Today.getMonth()+1; //月データは0～11なので1ずらす
+		var date = Today.getDate();
+		var day = Today.getDay();
+
+		document.write("今日は"+month+"月"+date+"日"+day+"曜日です。");
+	</script>
+
+	<h2>配列の練習</h2>
+	<script>
+		var cake = new Array("ショートケーキ","モンブラン","チーズケーキ",
+					"チョコケーキ","パンケーキ","レアチーズケーキ",
+					"アイスケーキ","プリンアラモード","抹茶ケーキ");
+		document.write("この"+ cake.length +"種類の中では"+ cake[3] + "が食べたいなあ");
+	</script>
+
+	<h2>今の時間</h2>
+	<script>
+		var youbi = new Array("日","月","火","水","木","金","土");
+		document.write("今日は" + youbi[day] + "曜日です。");
+	</script>
+</body>
+</html>

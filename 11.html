@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+</head>
+<body>
+	<h1>第11回　『whileループ』　2022年12月8日</h1>
+
+	<h2>宿題</h2>
+	<form name="form3">
+		<input type="text" size="3" name="ip1">
+		の
+		<input type="text" size="3" name="ip2">
+		乗は
+		<input type="text" size="5" name="op1">
+		です
+		<input type="button" value="計算" onclick="calc1();">
+	</form>
+	<script>
+		function calc1() {
+			var x = eval(document.form3.ip1.value);
+			var y = eval(document.form3.ip2.value);
+			var c=1
+			while (c<x**y) c=c*x;
+			document.form3.op1.value=c;
+		}
+	</script>
+
+	<form name="form4">
+		<input type="text" size="3" name="ip1">
+		は2で
+		<input type="text" size="3" name="op1">
+		回割り切れ、割り切った時の商は
+		<input type="text" size="3" name="op2">
+		です
+		<input type="button" value="計算" onclick="calc2();">
+	</form>
+	<script>
+		function calc2() {
+			var N = eval(document.form4.ip1.value);
+			var a = 0;
+			while (N%2===0){
+				N=N/2;
+				a=a+1;
+			}
+			document.form4.op1.value=a;
+			document.form4.op2.value=N;
+		}
+	</script>
+
+			
+
+	<h2>カウントアップ</h2>
+	<form name="form1">
+		<input type="button" value="押す" onclick="cu()">
+	</form>
+	<script>
+		function cu(){
+			var c=1;
+			while (c<=5){
+				alert(c);
+				c=c+1;
+			}
+		}
+	</script>
+
+
+	<h2>1からNまでの和</h2>
+	<form name="form2">
+		1+2+…+
+		<input type="text" size="3" name="ip">
+		=
+		<input type="text" size="5" name="op">
+		<input type="button" value="計算" onclick="calc();">
+	</form>
+	<script>
+		function calc() {
+			var N=eval(document.form2.ip.value);
+			var c=1;
+			var sum=0;
+
+			while (c<=N){
+				sum=sum+c;
+				c++;
+			}
+			document.form2.op.value=sum;
+		}
+	</script>
+</body>
+
+</html>

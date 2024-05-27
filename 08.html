@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+	<script>
+		function br(){
+			document.write("<br>");
+		}
+	</script>
+	
+</head>
+<body>
+	<h1>第08回　『JavaScriptの基本２（関数とform）』　2022年11月10日</h1>
+
+	<h2>引数なし戻り値なしの関数の例</h2>
+	<script>
+		function hello(){
+			document.write("こんにちは");
+		}
+		hello();
+	</script>
+
+	<h2>引数あり戻り値なしの関数の例</h2>
+	<script>
+		function hello2(Name){
+			document.write("こんにちは"+Name+"さん");
+			br();
+			document.write("今日はいい天気ですね");
+			br();
+		}
+		hello2("アソパソマソ");
+	
+		hello2("クソソソ");
+
+	</script>
+
+	<h2>引数あり戻り値ありの関数の例</h2>
+	<script>
+		function add(x,y){
+			var z = x+y;
+			return z;
+		}
+		document.write(add(3,5));
+	</script>
+
+	<h2>formの練習</h2>
+		
+		<form name="form1">
+			<input type="text" size="2" name="ip1">
+			+
+			<input type="text" size="2" name="ip2">
+			=
+			<input type="text" size="4" name="op">
+			<input type="button" value="計算" onclick="test();">
+		</form>
+		<script>//ip1の値を取得してopに出力するテストスクリプト
+			function test(){
+				var x = document.form1.ip1.value;
+				document.form1.op.value = x;
+			}	
+		</script>
+		
+</body>
+</html>

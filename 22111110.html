@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人（22111110）</title>
+	<link href="style.css" rel="stylesheet">
+
+	 <!--CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=philosopher" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+<style>
+
+/*   第5回授業ページの図を何とかボーダーを使って作ろうした結果
+------------------------------------------------------------------------   */
+
+.bg_1 {
+	text-align: center
+	height: 200px; 
+	width: 300px;                
+	border: dashed 1px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.bg_1.2{
+	height: 20px;
+	weidth: 40px;
+	padding: 0px;
+	margin: 0px;
+}
+ 
+.bg_2 {
+	margin: 0px auto;         
+	height: 150px;                 
+	width:  200px;                      
+	padding: 10px ;            
+	border: solid 1px;  	           
+}
+.bg_3 {
+	margin: 0px auto;
+	text-align: center;
+	padding:10px;
+ 	height: 70px;                
+    	width:  120px; 	
+	border: dashed 1px;
+	background-color:aliceblue;
+}
+
+
+</style>
+
+	
+
+</head>
+
+<body>
+
+	
+
+	<div id="home" class="big-bg">
+            <div class="page-header">
+                <h1>22111110</h1>
+            </div>
+		<a href="mypage.html" class="item"><p>my page⇀</p></a>
+		<a href="siyousho.html" class="item"><p>specification⇀</p></a>
+            <div class="home-content ">
+                <h2 class="page-title">naoto <br>makimoto</h2>
+            </div>
+        </div>
+        <div class="bg_11">
+            <h1>SUMMARY</h1>
+		<h2 class="font11">まとめページ</h2>
+	
+	<div class="container">
+	<a href="#15" class="item">#15</a>
+	<a href="#14" class="item">#14</a>
+	<a href="#13" class="item">#13</a>
+	<a href="#12" class="item">#12</a>
+	<a href="#11" class="item">#11</a>
+	<a href="#10" class="item">#10</a>
+	<a href="#09" class="item">#09</a>
+	<a href="#08" class="item">#08</a>
+	<a href="#07" class="item">#07</a>
+	<a href="#06" class="item">#06</a>
+	<a href="#05" class="item">#05</a>
+	<a href="#04" class="item">#04</a>
+	<a href="#03" class="item">#03</a>
+	<a href="#02" class="item">#02</a>
+	</div>
+
+        </div>
+        <div class="bg_22">
+            <h1>CLASS</h1>
+		<h2 class="font12">授業ページ</h2>
+	
+	<div class="container">
+	<a href="15.html" class="item2">#15</a>
+	<a href="14.html" class="item2">#14</a>
+	<a href="13.html" class="item2">#13</a>
+	<a href="12.html" class="item2">#12</a>
+	<a href="11.html" class="item2">#11</a>
+	<a href="10.html" class="item2">#10</a>
+	<a href="09.html" class="item2">#09</a>
+	<a href="08.html" class="item2">#08</a>
+	<a href="07.html" class="item2">#07</a>
+	<a href="06_2.html" class="item2">#06_2</a>
+	<a href="06_1.html" class="item2">#06_1</a>
+	<a href="05.html" class="item2">#05</a>
+	<a href="04.html" class="item2">#04</a>
+	<a href="03.html" class="item2">#03</a>
+	</div>	
+
+        </div>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="page">
+
+
+	<h2 id="14"><span class="font1">14</span><span class="font3">日付・配列</span><span class="font2">2023.01.12</span></h2>
+	<a href="14.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	<h3>日付オブジェクトの生成</h3>
+	<p>オブジェクト名</td><td>= new Date();</td><td> … 現在の時刻を取得</p><br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= new Date(0); … 1970/1/1 0:00 (GMT) , 9:00 (JST)</p><br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= new Date(n); … ↑ ここから n ミリ秒後</p><br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= new Date(2023,0,12,17,5,78); … 2023年1月12日17:05:78</p><br>
+
+	<br><br>
+	<h3>生成されたオブジェクトから日付等の取得</h3>	
+	<table class="ex_table">
+		<tr>
+			<td>オブジェクト名 . getFullYear()</td><td> … ４桁の西暦</td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getYear()</td><td> … 西暦</td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getMonth()</td><td> … 月（<span class="bg1">0～11</span>の間の値）　<u><span class="bg1">※1つずれる</span><u></td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getDate()</td><td> … 日</td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getDay()</td><td> … 曜日<span class="bg1">（0～6の間の値・0が日曜）</span></td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getHours()</td><td> … 時
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getMinutes()</td><td> … 分
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getSeconds()</td><td> … 秒
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getMilliSeconds()</td><td> … ミリ秒
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;〃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			. getTime()</td><td> …  1970/1/1 0:00 (GMT) からのミリ秒
+		</tr>
+	</table>
+
+	<br><br>
+	<h3>配列</h3>
+		<p>配列 ≒ 番号づけられた変数の組　x[0],x[1],…<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;
+			<span class="bg1">↑xは0からスタート</span></p>
+	<br><br>
+	<h3>配列の宣言と初期化</h3>
+		
+		<table class="ex_table">
+			<tr>
+				<td>var 配列名 = new␣Array();</td>
+			</tr>
+			<tr>
+				<td>var 配列名 = new␣Array(自然数値);<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑配列の長さ（length）</td>
+			</tr>
+			<tr>
+				<td>var 配列名 = new␣Array(値<sub>0</sub> , 値<sub>1</sub> , … ,値<sub>n-1</sub>);<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑値をカンマ切りで入れる</td>
+				
+			</tr>
+		</table><br>
+		<p>-- 例 ----<br>
+			<ul>
+				<li>var x = new Array(); <br>
+					&nbsp;&nbsp;&nbsp;⇒ x[0] , x[1] , … という変数を作る</li><br>
+				<li>var y = new Array(10);<br>
+					&nbsp;&nbsp;&nbsp;⇒ y[0] , y[1] , … , y[9] という10個の変数を作る</li><br>
+				<li>var cake = new Array("ショートケーキ","モンブラン",…);<br>
+					&nbsp;&nbsp;&nbsp;⇒cake[0] , cake[1] , …　を作って、<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cake[0]にはショートケーキ、cake[1]にはモンブランを代入</li>
+			</ul>
+		</p>
+		
+	<br><br>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+	<h2 id="13"><span class="font1">13</span><span class="font3">素因数分解</span><span class="font2">2022.12.22</span></h2>
+	<a href="13.html" class="stripe">授業ページへ</a>
+	<br><br>
+	
+	<p><b>（定理）</b><br>
+	 p を素数、 p' を p の次の素数（ p を超える最小の素数）とする<br>
+	<u>自然数 N が 2 から p までの自然数で割り切れなければ</u>、 N は p+1 から p'-1 までの自然数で割り切れない</p>
+	<br><br>
+
+	<p><b>（証明）</b><br>
+	d ∈ N , p+1 ≦ d ≦ p'-1 とする<br>
+	p , p' の取り方より、d は素数ではない<br>
+	よって p 以下のある素数 p<sub>1</sub> とある自然数 q により<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	d = p<sub>1</sub> × q<br>
+	と書ける。p<sub>1</sub> は d よりも小さい素数なので p よりも小さい<br>
+	よって<u>仮定</u>より、N は p<sub>1</sub> で割り切れない。<br>
+	したがって N は d でも割り切れない。
+	 
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+
+
+
+
+	<br><br><br><br>
+	<h2 id="12"><span class="font1">12</span><span class="font3">forループ</span><span class="font2">2022.12.15</span></h2>
+	<a href="12.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	<h3>for文 : カウンタを使ってループを回す</h3>
+	<p>
+	カウンタの初期化、続行条件、カウンタの変化を1つのパッケージにまとめたようなもの
+	</p>
+	<img src="flowchart7.png" height="350px" width="500px">
+	<p>&lt;for文の書き方&gt;<br>
+		for (カウンタ = 初期値; 続行条件; カウンタの変化;) 命令;
+	</p><br>
+	<p>→while文で実現すると<br>
+		カウンタ = 初期値; while (続行条件) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			命令;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			カウンタ変化;<br>
+		}
+	</p><br>
+	<h3>インクリメント・デクリメント演算子</h3>
+	<table class="ex_table">
+		<tr>
+			<td>++</td><td> : インクリメント　変数に入っている数字を1増やす</td>
+		</tr>
+		<tr>
+			<td></td><td>　（→ c++; は c=c+1; とほぼ同じ）</td>
+		</tr>
+		<tr>
+			<td>--</td><td> : デクリメント　&nbsp;&nbsp;&nbsp;変数に入っている数字を1減らす</td>
+		</tr>
+		<tr>
+			<td></td><td>　（→ c--; は c=c-1; とほぼ同じ）</td>
+		</tr>
+			
+	</table>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+	
+
+
+
+	<br><br><br><br>
+	<h2 id="11"><span class="font1">11</span><span class="font3">whileループ</span><span class="font2">2022.12.08</span></h2>
+	<a href="11.html" class="stripe">授業ページへ</a>
+	<br><br>
+	<p>
+	関数の定義の中で var を使って変数を宣言すると、その変数はその関数（の定義）の中だけで使える ローカル変数 になる
+	</p>
+	<p>
+	 var を使わないとその変数は関数（の定義）の外でも使える グローバル変数 になる
+	</p><br>
+	<h3>while文 : ～である限り…し続けろ</h3>
+	<p>&lt;書き方&gt;<br>
+	while (条件文) 命令;</p>
+	<div  class="parent">
+	<img src="flowchart5.png" height="300px" width="340px">
+	<img src="flowchart6.png" height="330px" width="450px">
+	</div><br>
+	<h3>無限ループ</h3>
+	<p>
+	ループ処理において、何回処理を繰り返しても条件式が false にならなければ無限に処理をし続けることになる
+	</p>
+	<p>
+	そのような状態を無限ループという
+	</p>
+	<p>
+	※無限ループは文法的な間違いではないが、致命的なエラーになりかねないので十分気を付けること
+	</p>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+	
+
+	<br><br><br><br>
+	<h2 id="10"><span class="font1">10</span><span class="font3">分岐処理</span><span class="font2">2022.11.24</span></h2>
+	<a href="10.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	<h3>フローチャート</h3>
+	<p>…アルゴリズムの流れを表す図</p>
+	<table class="ex_table">
+		<tr>
+			<td>↓→|―</td><td> : 矢印の方向に進む。矢印なしのときは 左から右へ 上から下へ 進む</td>
+		</tr>
+		<tr>
+			<td>〇</td><td> : 端子 = 始まりと終わり</td>
+		</tr>
+		<tr>
+			<td>◇</td><td> : 判断 = 何かを判断して分岐する</td>
+		</tr>
+		<tr>
+			<td>□</td><td> : 処理 = 命令を実行する</td>
+		</tr>
+	</table><br>
+	
+	<h3>if : もし～ならば…せよ</h3>
+	<p>&lt;書き方&gt;<br>
+	if （<u>条件式</u>） 命令 ;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑true , false が決まる式
+	</p>
+	<p>挙動 … 条件式を見て　true なら命令を実行して / false なら何もせず　下に抜ける</p>
+	<img src="flowchart.png" height="300px" width="400px"><br>
+	<p>
+	if で分岐後に行われるのは条件式の直後に書かれた命令のみ<br>
+	分岐後に命令を行いたいのなら<u> { } で命令たちをひとまとめにする</u>必要がある
+	</p>
+	<img src="if.png" height="250px" width="350px"><br>
+	<img src="flowchart2.png" height="250px" width="480px"><br>
+	</p>
+	<h3>if else : もし～なら…せよ。そうでないなら---せよ。</h3>
+	<p>&lt;書き方&gt;<br>
+	if （条件1） 命令1；<br>
+	else 命令2；<br>
+	</p>
+	<img src="flowchart3.png" height="270px" width="400px">
+	
+	<h3>if else if : もし～なら…せよ。そうでないときもし××なら---せよ。…</h3>
+	<p>
+	&lt;書き方&gt;<br>
+	if （条件1） 命令1；<br>
+	else if （条件2） 命令2；<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<br>
+	<u>最後 else で終わっても else なしで終わってもよい</u>
+	</p>
+	<img src="flowchart4.png" height="380px" width="310px">
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+	<br><br><br><br>
+
+
+
+
+	<h2 id="09"><span class="font1">09</span><span class="font3">JavaScript.3</span><span class="font2">2022.11.17</span></h2>
+	<a href="09.html" class="stripe">授業ページへ</a>
+	<br><br>
+	<h3>計算の演算子</h3>
+	<p>…2つの数値に対して1つの数値を返す</p>
+	<table class="ex_table">
+		<tr>
+			<td> + </td><td> : 足し算</td><td> &nbsp;&nbsp;&nbsp;「a+b」は a の値と b の値の和を返す</td>
+		</tr>
+		<tr>
+			<td> - </td><td> : 引き算</td><td> &nbsp;&nbsp;&nbsp; 「a-b」は　〃　 　　〃　　差を返す</td>
+		</tr>
+		<tr>
+			<td> * </td><td> : 掛け算</td><td> &nbsp;&nbsp;&nbsp; 「a*b」は　〃　 　　〃　　積を返す</td>
+		</tr>
+		<tr>
+			<td> / </td><td> : 割り算</td><td> &nbsp;&nbsp;&nbsp; 「a/b」は a を b で割った商を返す</td>
+		</tr>
+		<tr>
+			<td> % </td><td> : 余り</td><td> &nbsp;&nbsp;&nbsp; 「a%b」は整数値 a を整数値 b で割った余りを返す</td>
+		</tr>
+	</table><br>
+	<p><u>※注意</u></p>
+	<p>① a+b は a と b のどちらかが文字列の時は文字列の連結になる</p>
+	<p>② ** で累乗計算ができる<br>
+	　→ a**b は a<sup>b</sup> のこと　（Excel等では a<sup>b</sup> は a^b と書いた）
+	</p><br>
+	<h3>代入演算子</h3>
+	<p>変数名＝値；で変数に値を代入する</p>
+	<p>
+	ex) &nbsp;&nbsp;var x ;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = 1 ;　<span class="bg1">←変数xに1という値を代入</span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x + 2　<span class="bg1">←変数xに（xの値＋2）という値を再代入</span>
+	</p>
+	<table class="ex_table">
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp; + = &nbsp;&nbsp;</td><td class="ex_border_a"></td> <td></td>
+		</tr>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp; - = &nbsp;&nbsp;</td><td class="ex_border_b"></td><td></td>
+		</tr>
+
+		<tr>
+			<td> &nbsp;&nbsp;&nbsp;* = &nbsp;&nbsp;</td><td class="ex_border_b"></td><td>→　<span class="bg1">a+=1; は a=a+1; と同じ意味</span></td>
+		</tr>
+
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp; / = &nbsp;&nbsp;</td><td class="ex_border_b"></td><td></td>
+		</tr>
+
+		<tr>
+			<td> &nbsp;&nbsp;&nbsp;% = &nbsp;&nbsp;</td><td class="ex_border_c"></td><td></td>
+		</tr>
+	</table>
+	<p>⇒&nbsp;<u>変数名が長いときは + = などを使うと便利！</u></p>
+	<p>
+	ex)&nbsp;&nbsp; var AgeofManabuide;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AgeofManabuide = 18;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AgeofManabuide = AgeofManabuide + 1;
+	&nbsp;&nbsp;&nbsp;&nbsp;←&nbsp; <u>AgeofManabuide + = 1; のほうが楽</u>
+	</p><br>
+	<h3>比較演算子</h3>
+	<p>…2つの値を比較して論理値（true , false）を返す</p>
+	<table class="ex_table">
+		<col span="1" align="center">
+		<tr>
+			<td> > = </td><td> : 以上</td><td>&nbsp;&nbsp;&nbsp; 3 > = "3" </td><td> true</td>
+		</tr>
+		<tr>
+			<td> < = </td><td> : 以下</td><td></td></td><td>
+		</tr>
+		<tr>
+			<td> > </td><td> : より大きい</td><td>&nbsp;&nbsp;&nbsp; 3 > "3" </td><td> false</td>
+		</tr>
+		<tr>
+			<td> < </td><td> : より小さい</td><td></td><td></td>
+		</tr>
+		<tr>
+			<td> = = </td><td> : 等しい</td><td>&nbsp;&nbsp;&nbsp; 3 = = "3"</td><td> true</td>
+		</tr>
+		<tr>
+			<td> ! = </td><td> : 等しくない</td><td>&nbsp;&nbsp;&nbsp; 3 ! = "3"</td><td> false</td>
+		</tr>
+		<tr>
+			<td> = = = </td><td> : 厳密に等しい</td><td>&nbsp;&nbsp;&nbsp; 3 = = = "3"</td><td> false</td>
+		</tr>
+		<tr>
+			<td> ! = = </td><td> : 厳密には等しくない</td><td>&nbsp;&nbsp;&nbsp; 3 ! = = "3"</td><td> true</td>
+		</tr>
+	</table>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(数値↑)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(↑"文字列")</p><br>
+	<h3>論理演算子</h3>
+	<p>…（2つの）論理値に対して論理値を返す</p>
+	<table class="ex_table">
+		<tr>
+			<td>&&</td><td> : かつ</td>
+		</tr>
+		<tr>
+			<td>||</td><td> : 又は</td>
+		</tr>
+		<tr>
+			<td>!</td><td> : ～でない</td>
+		</tr>
+	</table>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+	
+
+
+
+	<br><br><br><br>
+	<h2 id="08"><span class="font1">08</span><span class="font3">JavaScript.2</span><span class="font2">2022.11.10</span></h2>
+	<a href="08.html" class="stripe">授業ページへ</a>
+	<br><br>
+	<h3>関数</h3>
+	<p>…(何らかの値を代入して)使うと、<u>何らかの値</u>を返したり、何らかの処理を行うもの<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="bg1">↑戻り値</span></p>
+	<p>書き方↓</p>
+		<div class="box1"><p>function␣関数名（<span class="bg1">引数</span>の組）{<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="bg1">↑関数の変数に当たるもの</span>
+		<div class="box2">&nbsp;&nbsp;&nbsp;&nbsp;<p>&nbsp;&nbsp;&nbsp;命令;</p><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<br></div>
+		}</p></div>
+	<br>
+	
+	<ul>
+		<li>引数なし戻り値なしの関数の例<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+			function ␣ hello() {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			document. write ("こんにちは") ;<br>
+			}</li><br>
+		<li>引数あり戻り値なしの関数の例<br>
+			&nbsp;↓<br>
+			function ␣ hello2 (Name) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				document. write ("こんにちは"+Name+"さん") ;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				document. write ("&lt;br&gt;") ;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				document. write ("今日はいい天気ですね") ;<br>
+			}</li>
+	</ul><br>
+	<p>〇戻り値…関数を使ったときに返ってくる値　関数の定義の最後にreturn文で指定する<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	function ␣ 関数名（引数）{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	return 値;&nbsp;&nbsp;&nbsp;<span class="bg1">←最後に return</span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	}
+	</p><br>
+	<ul>
+		<li>引数あり戻り値ありの関数の例<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="bg1">↓引数が複数の時はカンマ切り</span><br>
+			function␣add(x,y){<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				var z=x+y;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				return z;<br>
+			}</li>
+	</ul></p><br>
+	
+	<h3>formの使い方（HTML）</h3>
+	<p>
+		&lt;form␣name="フォーム名"&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&lt;input type="text"␣size="横幅"␣name="ボックス名"&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&lt;input␣type="button"␣value="表示"␣onclick="スクリプト"&gt;<br>
+		&lt;/form&gt;<br><br>
+	</p>
+	
+	<h3>テキストボックスの値</h3>
+	<p>document、フォーム名、ボックス名、value　がテキストボックスの値</p><br>
+	<ul>
+		<li>テキストボックスの値を変数xに代入したいなら<br>
+			⇒&nbsp;&nbsp;&nbsp;&nbsp;x = document, フォーム名, ボックス名, value;</li><br>
+		<li>テキストボックスに値を代入したいなら<br>
+			⇒&nbsp;&nbsp;&nbsp;&nbsp;document, フォーム名, ボックス名, value = 値;</li>
+	</ul>
+	<br>
+	<p>◎文字列を数値に変換するにはeval関数を使う<br>
+	ex)　var x = eval ( document. form1. ip1. value) ; </p>
+
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+
+	
+
+	<br><br><br><br>
+	<h2 id="07"><span class="font1">07</span><span class="font3">JavaScript.1</span><span class="font2">2022.10.27</span></h2>
+	<a href="07.html" class="stripe">授業ページへ</a>
+	<br><br>
+	<h3>スクリプト（ソースコード）を書く場所</h3>
+	<ul>
+		<li>head要素内</li>
+		<li>body要素内</li>
+		<li>タグ内</li>
+		<li>別ファイルからの読み込み　&lt;script␣src="～<u>.js</u>"&gt; &lt;/script&gt;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;↑JavaScriptファイルは.jsという拡張子</li>
+	</ul>
+	<br>
+	<h3>JavaScript記述時の注意</h3>
+	<ul>
+		<li>スクリプト内では基本的に半角の英数記号を使う<br>
+		全角を使っていいのは文字列を扱う時と、コメント文のみ<br>
+		<span class="bg1">※全角カッコ、スペースを使わないよう注意</span></li><br>
+		<li>大文字、小文字が区別される</li><br>
+		<li>文字列はシングルクォート’～’やダブルクォート”～”で囲う</li><br>
+		<li>命令を1つ書くたびにセミコロン；で区切る</li><br>
+	</ul>	
+	<br>	
+	
+	<h3>コメント</h3>
+	<p>スクリプト内では</p>
+	<ul>
+		<li>/*～*/ で囲われる部分</li>
+		<li>// 以降、その行末まで</li>
+	</ul>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	は無視される</p>
+	<p>
+	<span class="stripe2">⇒<u>無視されるところにコメントを残すことができる！</u></span>（コメント文にして抜かす→コメントアウト）<br><br>
+	<span class="bg1">★少しずつコメントをつける部分を変えてミスを見つけ出す</span>
+	</p><br>
+	<table class="ProductTable">
+		<tr><td>・HTMLのコメント</td><td>・CSSのコメント</td></tr>
+		<tr><td>&nbsp;&nbsp;&nbsp;&lt;!--～--&gt;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*～*/</td></tr>
+	</table>
+	</p>
+	<br><br>
+	<h3>文字列の出力</h3>
+	<p>
+	document.write（”文字列”）;<span class="bg1"> ←命令終わりに；</span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="bg1">↑文字列は ”～” / ’～’ で囲う</span><br><br>
+	文字列は＋で連結できる<br>
+	document.write(”文字列”＋”文字列”)
+	</p>
+	<br><br>
+	<h3>変数</h3>
+	<p><u>変数＝値を入れる箱</u>
+	（→入れる値は整数値、小数値、文字列、論理値など）
+	</p><br>
+	<p>
+	〇変数の定義（宣言）の仕方-----「以下、この数値は変数として扱いなさい」<br>
+	var␣変数名；<br>
+	var␣変数名1,変数名2,…；<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="bg1">↑複数を一気に宣言するときはカンマ切りで並べる</span>
+	</p>
+	<br>
+	<p>
+	〇変数名の付け方の注意<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+	<ul>
+		<li>変数名に使える記号は<br>
+			<ul><li>半角アルファベット　a～ｚ,A～Z</li>
+				<li>半角数字　0～9</li>
+				<li>アンダースコア　_</li>
+				<li>ドル　＄</li></ul><br>
+		<li>変数名はこれらの記号を使った文字列<br>
+			但し、
+			<ul><li>数字は変数名の先頭にできない</li>
+			<li>予約語（他で使う単語）は使えない</li></ul>
+			<p>※変数名には、何を代入しているかわかる単語を使うとよい</li></p>
+	</ul>
+	</p>
+	<br>
+	<p>
+	〇変数への代入<br>
+	変数名<span class="bg1">＝</span>値；<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bg1">↑代入演算子</span></p>
+	<p>例）var␣Name;<br>
+	 Name="巻本直人"；
+	</p>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+		
+	
+
+
+	<br><br><br><br>
+
+	<h2 id="06"><span class="font1">06</span><span class="font3">CSS.2</span><span class="font2">2022.10.20</span></h2>
+	<a href="06_1.html" class="stripe">授業ページ1へ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="06_2.html" class="stripe">授業ページ2へ</a>
+	<br><br>
+
+	
+	<h3>タグにid属性、class属性をつける</h3>
+	<p>&lt;tag␣id="ID名"&gt;～&lt;/tag&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(＊1つのページに同じID名は1つだけ)</p>
+	<p>&lt;tag␣id="class名"&gt;～&lt;/tag&gt;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(＊1つのページに同じclass名を何か所もつけられる)</p>
+	<br>
+	
+	<h3>idやclassがついたタグにスタイルを適用する</h3>
+	<p>#id{属性:値;…}</p>
+	<p>.class{属性:値;…}</p>
+	<br>
+	<h3>特定の要素の中でidやclassがついたものにスタイルを適用</h3>
+	<p>要素名#id名{属性:値;…}</p>
+	<p>要素名.class名{属性:値;…}</p>
+	<br>
+	<h3>便利なタグ</h3>
+	<table class="ex_table">
+		<tr>
+			<td>&lt;span&gt;～&lt;/span&gt;</td><td> : 何も起こらないタグ（インライン要素を作る）</td>
+		</tr>
+		<tr>
+			<td>&lt;div&gt;～&lt;/div&gt;</td><td> : 何も起こらないタグ（ブロック要素を作る）</td>
+		</tr>
+	</table><br>
+	<h3>長さの単位</h3>
+	<p>
+	&lt;絶対的&gt;
+	</p>
+	<table class="ex_table">
+		<tr>
+			<td>cm</td><td> : センチメートル</td>
+		</tr>
+		<tr>
+			<td>mm</td><td> : ミリメートル</td>
+		</tr>
+		<tr>
+			<td>in</td><td> : インチ</td>
+		</tr>
+		<tr>
+			<td>px</td><td> : ピクセル</td>
+		</tr>
+	</table><br>
+	<p>
+	&lt;相対的&gt;
+	</p>
+	<table class="ex_table">
+		<tr>
+			<td>%</td><td> : パーセント</td>
+		</tr>
+		<tr>
+			<td>em</td><td> : フォントの大きさ</td>
+		</tr>
+		<tr>
+			<td>ex</td><td> : x の高さ</td>
+		</tr>
+	</table>
+		<p> &nbsp;&nbsp;&nbsp;<u>＊フォントベースで大きさを合わせくれる</u></p>
+
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+
+	<br><br><br><br>
+
+
+
+
+	<h2 id="05"><span class="font1">05</span><span class="font3">CSS.1</span><span class="font2">2022.10.13</span></h2>
+	<a href="05.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	<h3>CSS…Cascading Style Sheet</h3>
+	<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;webページの内容構造はHTML、デザインはCSS<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;両者を分離することにより、デザイン変更が楽になる
+	</p><br>
+	<h3>ボックス</h3>
+	<p>HTMLの各要素（タグで囲まれている部分）はボックスと呼ばれる領域を生成する</p>
+	<div class="bg_1">
+   	 <p>margin ↕</p>
+	
+    		<div class="bg_2">
+		 <p>padding ↕</p>
+			<div class="bg_3">
+				<p>content</p>
+			</div>
+		</div>
+	<div class="bg_1.2" align="right">
+		<p>↑border</p>
+	</div>
+	</div>
+	</p>	
+
+	<ul>
+		<li>border : 枠線</li>
+		<li>content : 文章・画像が表示される領域</li>
+		<li>margin : borderとほかの要素の距離</li>
+		<li>padding : borderとcontentとの距離</li>
+	</ul>
+	<br>
+	<h3>色指定</h3>
+	<p>#RRGGBB形式<br>
+	赤（R）緑（G）青（B）の光の強さをそれぞれ2桁の16進数（00～FF）の256段階で指定
+	</p>
+	<table class="producttable">
+		<tr><td>弱</td><td></td></tr>
+		<tr>
+			<td><div class="yajirusi"></div></td>
+			<td><div style="line-height: 2.3em;">
+				00…0×16¹＋0×16⁰＝0→光が出ていない<br>
+				8C…8×16¹＋12×16⁰＝140<br>
+				FF…15×16¹＋15×16⁰＝255→最強の光<br>	</div>
+			</td>
+		</tr>
+		<tr><td>強</td><td></td></tr>
+	</table>
+	
+	<p>
+	# <u>FF</u> <u>FF</u> <u>FF</u>…白　&nbsp;&nbsp;&nbsp;&nbsp;　#000000…黒　&nbsp;&nbsp;&nbsp;&nbsp;　#FF0000…赤<br>
+	 &emsp;赤&nbsp;&nbsp;緑&nbsp;&nbsp;青
+	</p><br>
+	
+	<h3>CSSを書く場所</h3>
+	<ul>
+		<li>ヘッド要素内…ヘッド要素内に&lt;style&gt;～&lt;/style&gt;で指定</li><br>
+		<li class="ulli1">別ファイルを読み込み…ヘッド要素内に&lt;link rel="stylesheet" href="URL"&gt;</li><br>
+		<li>個別のタグに…&lt;tag style="属性：値；…"&gt;～&lt/tag&gt;<br>※変更に対応しにくいので使わないほうがいい
+	</ul>
+	<br><br>
+	<h3>CSSの書き方</h3>
+	<ul>
+	<li>
+	特定の要素に適用<br>
+	<p>要素名{属性₁：値₁；属性₂：値₂；…}</p>
+	<p>ex) h1 { color: #0000FF; border-bottom-style : solid; padding : 10px }<br></p></li><br>
+	<li>
+	複数の要素に同じスタイルを適用<br>
+	<p>要素₁,要素₂,…{…}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bg1">↑カンマ切りで並べる</span></p></li><br>
+	<li>
+	特定の要素内の要素にだけ適用<br>
+	<p>親要素␣子要素{…}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bg1">↑スペース切り</span></p></li>
+	</ul>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+	<br><br><br><br>
+
+
+
+
+	
+	<h2 id="04"><span class="font1">04</span><span class="font3">HTML.3</span><span class="font2">2022.10.06</span></h2>
+	<a href="04.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	
+	<h3>箇条書き</h3>
+	<table width="300">
+	<tr>
+	<td>
+	・番号付き<br>
+	&lt;ol&gt;<br>
+	&nbsp&nbsp&nbsp&lt;li&gt;～&lt;/li&gt;<br>
+	&nbsp&nbsp&nbsp&lt;li&gt;～&lt;/li&gt;<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<br>
+	&lt;/ol&gt;<br>
+	</td>
+	<td>
+	・番号なし<br>
+	&lt;ul&gt;<br>
+	&nbsp&nbsp&nbsp&lt;li&gt;～&lt;/li&gt;<br>
+	&nbsp&nbsp&nbsp&lt;li&gt;～&lt;/li&gt;<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<br>
+	&lt;/ul&gt;<br>
+	</td>
+	</tr>
+	</table>
+	
+	<br>
+	<p>
+	＊<u>olタグの属性</u><br>
+	・start="開始番号"<br>
+	・type=<u>"形式"</u><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp↓
+	</p>
+	<ul>
+		<li>1…アラビア数字<br>
+		<li>ⅰ…ローマ数字（小文字）<br>
+		<li>Ⅰ…ローマ数字（大文字）<br>
+		<li>a…アルファベット（小文字）<br>
+		<li>A…アルファベット（大文字）<br>
+	</ul>
+	<br>
+	<h3>表</h3>
+	<p>
+	&lt;table&gt;
+	&nbsp&nbsp&nbsp&nbsp&nbsp（&lt;table border&gt;で表に枠線をつけられる）<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;tr&gt;<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	&lt;th&gt;<span style="background-color: lavenderblush">ヘッダー</span>&lt;/th&gt;
+	&nbsp&nbsp&nbspor&nbsp&nbsp&nbsp&lt;td&gt;<span style="background-color:aliceblue">データ</span>&lt;/td&gt;<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/tr&gt;<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;tr&gt;<br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/tr&gt;<br>
+	&lt;/table&gt;<br><br>(例)<br>
+	</p>
+	<table border>
+			<tr bgcolor="lavenderblush">
+				<th>品名</th>
+				<th>単価</th>
+				<th>在庫</th>
+			</tr>
+			<tr bgcolor="aliceblue">
+				<td>豆大福</td>
+				<td>80</td>
+				<td>8</td>
+			</tr>
+			<tr bgcolor="aliceblue">
+				<td>水饅頭</td>
+				<td>150</td>
+				<td>20</td>
+			</tr>
+	</table>
+	<br><br>
+	<h3>画像の表示</h3>
+	<p>
+	&lt;img&nbspsrc="ファイルパス"&gt;&nbsp&nbsp&nbsp終了タグなし<br>
+	&nbsp&nbsp&nbsp属性↓<br>
+	</p>
+	<table class="ex_table">
+		<tr>
+			<td>alt</td><td> : 代替テキスト … 画像が表示されないときに説明する文章</td>
+		</tr>
+		<tr>
+			<td>width</td><td> : ピクセル数</td>
+		</tr>
+		<tr>
+			<td>height</td><td> : ピクセル数　（ → height と width どちらか片方だけでは比率を変えられない）</td>
+		</tr>
+	</table>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>	
+
+
+
+
+	<br><br><br><br>
+	<h2 id="03"><span class="font1">03</span><span class="font3">HTML.2</span><span class="font2">2022.09.29</span></h2>
+	<a href="03.html" class="stripe">授業ページへ</a>
+	<br><br>
+
+	
+	<h3>タグに属性を付ける</h3>
+	<p>&lt;tag 属性="値"&gt;～&lt/tag&gt</p>	
+	<p>&lt;tag 属性₁="値₁" 属性₂="値₂" …&gt;～&lt;/tag&gt;<p><br>
+
+	<h3>リンクを貼る</h3>
+	<p>&lt;a href="URL"&gt;～&lt;/a&gt;</p><br>
+
+	<h3>ページ内の指定先に飛ぶ</h3>
+	<ol>
+		<li><u>指定先を作る</u><br>	
+		飛びたいところにある何らかのタグにidを付ける<br>
+		&lt;tag id="ID名"&gt;～&lt;/tag&gt;<br>
+		　↓
+		</li>
+		<li><u>指定先に飛ぶ</u><br>
+		&lt;a href="URL#ID名"&gt～&lt;/a&gt;<br>
+		同じページなら<br>
+		&lt;a href="#ID名"&gt;～&lt;/a&gt; でOK<br>
+		</li>
+	</ol>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+
+	
+
+
+	<br><br><br><br>
+
+	<h2 id="02"><span class="font1">02</span><span class="font3">HTML.1</span><span class="font2">2022.09.22</span></h2>
+	<h3>HTMLの基本文法</h3>
+	<p>
+	→開始タグと終了タグで内容を囲う<br>
+	&lt;tag&gt;内容&lt;/tag&gt;<br>
+	</p>
+	<br>
+
+	<h3>HTMLの基本構造</h3>
+	<p>
+	&lt;!DOCTYPE html&gt;</br>
+	&lt;html lang="ja"&gt;</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ヘッド要素…ページの情報</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ボディ要素…内容</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</br>
+	&lt;/html&gt;</br></br>
+	</p>
+
+	<h3>ヘッド要素に入れる情報</h3>
+
+	<table class="ex_table">
+		<tr>
+			<td>文字コード</td><td> : &lt;meta charset="UTF-8"&gt;</td>
+		</tr>
+		<tr>
+			<td>タイトル</td><td> : &lt;title&gt;～&lt;/title&gt;</td>
+		</tr>
+		<tr>
+			<td>基準URL</td><td> : &lt;base href="URL"&gt;</td>
+		</tr>
+	</table>
+	</div>
+	<div class="return"><a href="#">ページトップへ戻る</a></div>
+	
+
+	<br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

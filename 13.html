@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+</head>
+<body>
+	<h1>第13回　『素因数分解』　2022年12月22日</h1>
+
+	<h2>素因数分解</h2>
+	<form name = "form1">
+		<input type="text" size="5" name="ip">
+		=
+		<input type="text" size="20" name="op">
+		<input type="button" value="分解" onclick="calc()">
+		<input type="reset"> 
+	</form>
+	<script>
+		function calc(){
+			var N = eval(document.form1.ip.value);
+			var res = 0;
+			for (var d=2; N>1; d++){
+				c=0; while(N%d===0){
+					N=N/d;
+					c++;
+				}
+				if (c>0) {
+					res=res+(d)+("^")+(c)+(" ");     //←×をスペースで表現（次の文字とくっついてしまうため）//
+					// res=res+(d)+("^")+(c)+("*"); //    //←最後に＊が残ってしまう、、//
+					}
+			}
+			document.form1.op.value=res;
+		}
+	</script>
+	
+</body>
+</html>
+
+

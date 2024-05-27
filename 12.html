@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>巻本直人(22111110)</title>
+</head>
+<body>	
+	<h1>第12回　『forループ』　2022年12月15日</h1>
+	
+	<h2>カウントアップ</h2>
+	<form name="form1">
+		<input type="button" value="押す" onclick="cu()">
+	</form>
+	<script>
+		function cu(){
+			for (var c=1; c<=5; c++) alert(c);
+			alert("抜けた後のcの値は"+ c)
+		}
+	</script>
+	
+	<h2>2で何回割り切れるか？</h2>
+	
+	<form name="form2">
+		<input type="text" size="5" name="ip" placeholder="自然数値">
+		は2で
+		<input type="text" size="5" name="op1">
+		回割り切れて、割り切った商は
+		<input type="text" size="5" name="op2">
+		です
+		<input type="button" value="計算" onclick="calc()">
+	</form>
+	<script>
+		function calc(){
+			var N = eval(document.form2.ip.value);
+			for (var c=0; N%2===0; c++) N=N/2;
+			document.form2.op1.value=c;
+			document.form2.op2.value=N;
+		}
+	</script>
+
+	<h2>2のべき乗和</h2>
+	<form name="form3">
+		2<sup>0</sup>+2<sup>1</sup>+2<sup>2</sup>
+		+…+2<sup><sup><input type="text" size="2" name="ip"></sup></sup>
+		=<input type="text" size="5" name="op">
+		<input type="button" value="計算" onclick="calc2();">
+	</form>
+	<script>
+		function calc2(){
+			var N = eval(document.form3.ip.value);
+			var sum = 0;
+			var pow = 1;
+			for (var c=0; c<=N; c++) {
+				sum=sum+pow;
+				pow=pow*2;
+			}
+			document.form3.op.value=sum;
+		}
+	</script>
+
+	<h2>素因数分解の表現</h2>
+		120=2*2*2*3*5<br>
+		120=2^3*3*5
+</body>
+</html>
